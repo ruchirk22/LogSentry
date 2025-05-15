@@ -1,5 +1,7 @@
 fastapi
 uvicorn
+celery
+redis
 pydantic
 elasticsearch
 sentence-transformers
