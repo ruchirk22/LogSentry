@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+elasticsearch
+sentence-transformers
+transformers
+pytest
+pandas
+numpy
+scikit-learn
