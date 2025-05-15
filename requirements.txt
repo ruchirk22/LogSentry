@@ -10,3 +10,5 @@ pytest
 pandas
 numpy
 scikit-learn
+python-multipart
+werkzeug
