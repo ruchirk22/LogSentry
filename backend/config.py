@@ -1,5 +1,6 @@
-import os
-
-class Config:
-    DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///logsentry.db")
-    ELASTICSEARCH_HOST = os.getenv("ELASTICSEARCH_HOST", "localhost:9200")
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+# backend/config.py
+task_routes = {
+    'backend.services.ingestion_service.parse_and_store': {'queue': 'ingest'},
+}
